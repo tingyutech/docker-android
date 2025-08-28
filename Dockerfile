@@ -1,6 +1,6 @@
 FROM rust:1.86-slim-bookworm
 
-RUN apt update && apt install -y openjdk-17-jdk wget unzip git cmake protobuf-compiler clang python3
+RUN apt update && apt install -y openjdk-17-jdk wget unzip git cmake protobuf-compiler clang python3 curl
 
 RUN mkdir -p /usr/lib/android-sdk &&\
     cd /tmp &&\
