@@ -16,4 +16,6 @@ ENV PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PA
 
 RUN yes | sdkmanager --licenses && sdkmanager "ndk;29.0.13846066"
 
+RUN cargo install cargo-ndk
+
 CMD ["bash"]
